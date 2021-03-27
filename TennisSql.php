@@ -70,6 +70,10 @@
 						$response=array(
 						'Verification' =>true,
 						);
+					}else{
+						$response=array(
+						'Verification' =>false,
+						);
 					}
 				}
 				$mysqli->close();
