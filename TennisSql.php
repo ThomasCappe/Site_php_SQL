@@ -62,7 +62,7 @@
 			if ($_GET['Identification']!=null){
 				$mysqli = new mysqli("localhost", "pi", "raspberry", "tennis");
 				$mysqli -> set_charset("utf8");
-				$requete = "SELECT MotDePasse FROM Utilisateur WHERE Identifiant= '".$_GET['identifiant']."'";
+				$requete = "SELECT MotDePasse FROM Utilisateurs WHERE Identifiant= '".$_GET['identifiant']."'";
 				$resultat = $mysqli -> query($requete);
 				$response = array();
 				while ($ligne = $resultat -> fetch_assoc()) {
